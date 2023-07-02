@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*---VARIABLES DE TIPOGRAFÍA---*/
+/*----familia de fuente----*/
+/*----tamaños de fuente----*/
+/*-----MÁRGENES Y PADDINGS-----*/
+/*-----MEDIA QUERIES-----*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.4rem;
+  margin: 0;
+}
+@media only screen and (min-width: 36rem) {
+  h1,
+.h1 {
+    font-size: 3.6rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  h1,
+.h1 {
+    font-size: 4.8rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  h1,
+.h1 {
+    font-size: 6.4rem;
+  }
+}
+
+h2,
+.h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.4rem;
+  margin: 0;
+}
+@media only screen and (min-width: 90rem) {
+  h2,
+.h2 {
+    font-size: 4.8rem;
+  }
+}
+
+h3,
+.h3 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+@media only screen and (min-width: 36rem) {
+  h3,
+.h3 {
+    font-size: 2.4rem;
+  }
+}
+@media only screen and (min-width: 90rem) {
+  h3,
+.h3 {
+    font-size: 3.6rem;
+  }
+}
+
+h4,
+.h4 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+@media only screen and (min-width: 90rem) {
+  h4,
+.h4 {
+    font-size: 2.4rem;
+  }
+}
+
+h5,
+.h5 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.4rem;
+  margin: 0;
+}
+@media only screen and (min-width: 90rem) {
+  h5,
+.h5 {
+    font-size: 2rem;
+  }
+}
+
+h6,
+.h6 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.4rem;
+  margin: 1em 0 0 0;
+}
+@media only screen and (min-width: 48rem) {
+  h6,
+.h6 {
+    font-size: 1.8rem;
+  }
+}
+
+/*---parrafos---*/
+p {
+  font-family: "Marcellus", serif;
+}
+
+p.font-size-24-s {
+  font-size: 2rem;
+  margin: 0;
+}
+@media only screen and (min-width: 64rem) {
+  p.font-size-24-s {
+    font-size: 2.4rem;
+  }
+}
+
+p.font-size-20-xs {
+  font-size: 1.8rem;
+  margin: 0;
+}
+@media only screen and (min-width: 64rem) {
+  p.font-size-20-xs {
+    font-size: 2rem;
+  }
+}
+
+p.font-size-16-xxs {
+  font-size: 1.4rem;
+  margin: 0;
+}
+@media only screen and (min-width: 90rem) {
+  p.font-size-16-xxs {
+    font-size: 1.8rem;
+  }
+}
+
+/*-----mapa y loop de tamaños tipografía---*/
+.font-size-16-xxs {
+  font-size: 1.4rem;
+}
+
+.font-size-20-xs {
+  font-size: 1.8rem;
+}
+
+.font-size-24-s {
+  font-size: 2rem;
+}
+
+.font-size-36-m {
+  font-size: 2.4rem;
+}
+
+.font-size-48-l {
+  font-size: 3.6rem;
+}
+
+.font-size-64-xl {
+  font-size: 4.8rem;
+}
+
+.font-size-96-xxl {
+  font-size: 6.4rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
