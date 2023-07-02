@@ -1,14 +1,53 @@
 .header-bg {
     background-color: $color-green;
     background-image: linear-gradient(180deg, 
-                        $color-green 13%, 
-                        $color-yellow 100%);
+                        $color-green 20%, 
+                        $color-yellow 77%,
+                        $color-yellow-lighten 100%);
     width: 100vw;
     padding: sp(l);
 }
 
-.header-form {
-    
+
+.contain-header-form {
+    display: flex;
+    justify-content: center;
+    padding: sp(xxs);
+
+    @include mq ($bp-small-desktop) { //1024px
+        justify-content: flex-end;
+        padding: sp(xxs) sp(l) sp(xxs) sp(l);
+    }
+}
+
+input[type="text"] {
+    font-family: $font-primary;
+    padding-left: sp(xs);
+    padding-right: sp(xs);
+    height: 2em;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid $color-green;
+    background-color: $color-white;
+
+    &:focus {
+        border-radius: 2px;
+        outline: none;
+        border: 2px solid $color-green;
+    }
+}
+
+button {
+    background-color: $color-green;
+    color: $color-black;
+    padding-left: sp(xxs);
+    padding-right: sp(xxs);
+    height: 2em;
+    border-radius: 2px;
+    border: none;
+    border: 2px solid $color-green;
+    font-family: $font-primary;
+    font-weight: 200;
 }
 
 .brand {

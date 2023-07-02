@@ -183,10 +183,57 @@ p.font-size-16-xxs {
 
 .header-bg {
   background-color: #76E3A7;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #76E3A7), to(#ffffb2));
-  background-image: linear-gradient(180deg, #76E3A7 13%, #ffffb2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #76E3A7), color-stop(77%, #ffffb2), to(#FEFEDE));
+  background-image: linear-gradient(180deg, #76E3A7 20%, #ffffb2 77%, #FEFEDE 100%);
   width: 100vw;
   padding: 6rem;
+}
+
+.contain-header-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.2rem;
+}
+@media only screen and (min-width: 64rem) {
+  .contain-header-form {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 1.2rem 6rem 1.2rem 6rem;
+  }
+}
+
+input[type=text] {
+  font-family: "Marcellus", serif;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  height: 2em;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 2px solid #76E3A7;
+  background-color: #ffffff;
+}
+input[type=text]:focus {
+  border-radius: 2px;
+  outline: none;
+  border: 2px solid #76E3A7;
+}
+
+button {
+  background-color: #76E3A7;
+  color: #1B171C;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  height: 2em;
+  border-radius: 2px;
+  border: none;
+  border: 2px solid #76E3A7;
+  font-family: "Marcellus", serif;
+  font-weight: 200;
 }
 
 .brand {
@@ -213,7 +260,7 @@ img {
      object-fit: cover;
 }
 
-section {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,4 +274,5 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #FEFEDE;
 }

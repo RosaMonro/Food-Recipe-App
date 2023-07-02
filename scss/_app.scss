@@ -4,9 +4,10 @@ img {
     object-fit: cover;
 }
 
-section {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $color-yellow-lighten;
 }
