@@ -1,3 +1,19 @@
+/*---VARIABLES DE COLOR---*/
+
+        /*----colores---*/
+
+        $color-green:     #76E3A7;
+        $color-yellow:    #ffffb2;
+        $color-black:     #1B171C;
+        $color-white:     #ffffff;
+
+        /*----Variables de color para BG----*/
+
+        $background-color-color-green:     #76E3A7;
+        $background-color-color-yellow:    #ffffb2;
+        $background-color-color-black:     #1B171C;
+        $background-color-color-white:     #ffffff;
+
 /*---VARIABLES DE TIPOGRAFÍA---*/
 
         /*----familia de fuente----*/
@@ -19,13 +35,13 @@
 /*-----MÁRGENES Y PADDINGS-----*/
 
         $margins: (
-                "xxs":  1.2,
-                "xs":   2.4,
-                "s":    3.6,
-                "m":    4.8,
-                "l":    6.0,
-                "xl":   10.8,
-                "xxl":  12.0,
+                "xxs":   1.2,
+                "xs":    2.4,
+                "s":     3.6,
+                "m":     4.8,
+                "l":     6.0,
+                "xl":    10.8,
+                "xxl":   12.0,
                 "giant": 20
         );
 

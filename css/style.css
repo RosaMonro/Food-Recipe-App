@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*---VARIABLES DE COLOR---*/
+/*----colores---*/
+/*----Variables de color para BG----*/
 /*---VARIABLES DE TIPOGRAFÍA---*/
 /*----familia de fuente----*/
 /*----tamaños de fuente----*/
@@ -15,24 +18,25 @@ body {
 h1,
 .h1 {
   font-family: "Abril Fatface", cursive;
-  font-size: 2.4rem;
+  font-size: 3.6rem;
+  font-weight: 100;
   margin: 0;
 }
 @media only screen and (min-width: 36rem) {
   h1,
-.h1 {
+  .h1 {
     font-size: 3.6rem;
   }
 }
 @media only screen and (min-width: 64rem) {
   h1,
-.h1 {
+  .h1 {
     font-size: 4.8rem;
   }
 }
 @media only screen and (min-width: 90rem) {
   h1,
-.h1 {
+  .h1 {
     font-size: 6.4rem;
   }
 }
@@ -41,11 +45,12 @@ h2,
 .h2 {
   font-family: "Abril Fatface", cursive;
   font-size: 2.4rem;
+  font-weight: 100;
   margin: 0;
 }
 @media only screen and (min-width: 90rem) {
   h2,
-.h2 {
+  .h2 {
     font-size: 4.8rem;
   }
 }
@@ -54,17 +59,18 @@ h3,
 .h3 {
   font-family: "Abril Fatface", cursive;
   font-size: 2rem;
+  font-weight: 100;
   margin: 0;
 }
 @media only screen and (min-width: 36rem) {
   h3,
-.h3 {
+  .h3 {
     font-size: 2.4rem;
   }
 }
 @media only screen and (min-width: 90rem) {
   h3,
-.h3 {
+  .h3 {
     font-size: 3.6rem;
   }
 }
@@ -73,11 +79,12 @@ h4,
 .h4 {
   font-family: "Abril Fatface", cursive;
   font-size: 2rem;
+  font-weight: 100;
   margin: 0;
 }
 @media only screen and (min-width: 90rem) {
   h4,
-.h4 {
+  .h4 {
     font-size: 2.4rem;
   }
 }
@@ -86,11 +93,12 @@ h5,
 .h5 {
   font-family: "Abril Fatface", cursive;
   font-size: 1.4rem;
+  font-weight: 100;
   margin: 0;
 }
 @media only screen and (min-width: 90rem) {
   h5,
-.h5 {
+  .h5 {
     font-size: 2rem;
   }
 }
@@ -99,11 +107,12 @@ h6,
 .h6 {
   font-family: "Abril Fatface", cursive;
   font-size: 1.4rem;
+  font-weight: 100;
   margin: 1em 0 0 0;
 }
 @media only screen and (min-width: 48rem) {
   h6,
-.h6 {
+  .h6 {
     font-size: 1.8rem;
   }
 }
@@ -172,7 +181,50 @@ p.font-size-16-xxs {
   font-size: 6.4rem;
 }
 
+.header-bg {
+  background-color: #76E3A7;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(13%, #76E3A7), to(#ffffb2));
+  background-image: linear-gradient(180deg, #76E3A7 13%, #ffffb2 100%);
+  width: 100vw;
+  padding: 6rem;
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
 img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

@@ -1,7 +1,8 @@
 h1, 
 .h1 {
     font-family: $font-headings;
-    font-size: $font-size-m;
+    font-size: $font-size-l;
+    font-weight: 100;
     margin: 0;
 
     @include mq ($bp-small-tablet) { //576px
@@ -21,6 +22,7 @@ h2,
 .h2 {
     font-family: $font-headings;
     font-size: $font-size-m;
+    font-weight: 100;
     margin: 0;
 
     @include mq ($bp-desktop) {
@@ -32,6 +34,7 @@ h3,
 .h3 {
     font-family: $font-headings;
     font-size: $font-size-s;
+    font-weight: 100;
     margin: 0;
 
     @include mq ($bp-small-tablet) { // 576px
@@ -47,6 +50,7 @@ h4,
 .h4 {
     font-family: $font-headings;
     font-size: $font-size-s;
+    font-weight: 100;
     margin: 0;
 
     @include mq ($bp-desktop) {
@@ -58,6 +62,7 @@ h5,
 .h5 {
     font-family: $font-headings;
     font-size: $font-size-xxs;
+    font-weight: 100;
     margin: 0;
 
     @include mq ($bp-desktop) {
@@ -69,6 +74,7 @@ h6,
 .h6 {
     font-family: $font-headings;
     font-size: $font-size-xxs;
+    font-weight: 100;
     margin: 1em 0 0 0;
 
     @include mq ($bp-tablet) { //768px
