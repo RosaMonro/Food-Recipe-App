@@ -1,0 +1,153 @@
+h1, 
+.h1 {
+    font-family: $font-headings;
+    font-size: $font-size-m;
+    margin: 0;
+
+    @include mq ($bp-small-tablet) { //576px
+        font-size: $font-size-l;
+    }
+
+    @include mq ($bp-small-desktop) { //1024px
+        font-size: $font-size-xl;
+    }
+
+    @include mq ($bp-desktop) {
+        font-size: $font-size-xxl;
+    }
+}
+
+h2, 
+.h2 {
+    font-family: $font-headings;
+    font-size: $font-size-m;
+    margin: 0;
+
+    @include mq ($bp-desktop) {
+        font-size: $font-size-xl;
+    }
+}
+
+h3, 
+.h3 {
+    font-family: $font-headings;
+    font-size: $font-size-s;
+    margin: 0;
+
+    @include mq ($bp-small-tablet) { // 576px
+        font-size: $font-size-m;
+    }
+
+    @include mq ($bp-desktop) { //1440px
+        font-size: $font-size-l;
+    }
+}
+
+h4, 
+.h4 {
+    font-family: $font-headings;
+    font-size: $font-size-s;
+    margin: 0;
+
+    @include mq ($bp-desktop) {
+        font-size: $font-size-m;
+    }
+}
+
+h5, 
+.h5 {
+    font-family: $font-headings;
+    font-size: $font-size-xxs;
+    margin: 0;
+
+    @include mq ($bp-desktop) {
+        font-size: $font-size-s;
+    }
+}
+
+h6, 
+.h6 {
+    font-family: $font-headings;
+    font-size: $font-size-xxs;
+    margin: 1em 0 0 0;
+
+    @include mq ($bp-tablet) { //768px
+        font-size: $font-size-xs;
+    }
+}
+
+/*---parrafos---*/
+
+p {
+    font-family: $font-primary;
+}
+
+p.font-size-24-s {
+    font-size: $font-size-s;
+    margin: 0;
+
+    @include mq ($bp-small-desktop) { //1024px
+        font-size: $font-size-m;
+    }
+}
+
+p.font-size-20-xs {
+    font-size: $font-size-xs;
+    margin: 0;
+
+    @include mq ($bp-small-desktop) { //1024px
+        font-size: $font-size-s;
+    }
+}
+
+p.font-size-16-xxs {
+    font-size: $font-size-xxs;
+    margin: 0;
+
+    @include mq ($bp-desktop) { //1440px
+        font-size: $font-size-xs;
+    }
+}
+
+        /*-----mapa y loop de tamaños tipografía---*/
+
+
+        $sizes: (
+                "size-16-xxs":  $font-size-xxs,
+                "size-20-xs":   $font-size-xs,
+                "size-24-s":    $font-size-s,
+                "size-36-m":    $font-size-m,
+                "size-48-l":    $font-size-l,
+                "size-64-xl":   $font-size-xl,
+                "size-96-xxl":  $font-size-xxl,
+        );
+
+        @each $size, $i in $sizes {
+                .font-#{$size} {
+                        font-size: $i;
+                }
+        }
+
+        /*-----mapa y loop de pesos fuente---*/
+
+        $weights: (
+                "weight-bold":      $font-weight-bold,
+                "weight-semibold":  $font-weight-semibold,
+                "weight-medium":    $font-weight-medium,
+                "weight-light":      $font-weight-light,
+        );
+
+            @each $weight, $i in $weights {
+                    .font-#{$weight} {
+                            font-weight: $i;
+                    }      
+            }
+
+        /*-----loop de estilo fuente---*/
+
+
+            @each $style, $i in $styles {
+                .font-#{$style} {
+                        font-style: italic;
+                }
+        }
