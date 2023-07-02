@@ -40,14 +40,12 @@ input[type="text"] {
 button {
     background-color: $color-green;
     color: $color-black;
-    padding-left: sp(xxs);
-    padding-right: sp(xxs);
+    padding-left: sp(xs);
+    padding-right: sp(xs);
     height: 2em;
     border-radius: 2px;
-    border: none;
     border: 2px solid $color-green;
     font-family: $font-primary;
-    font-weight: 200;
 }
 
 .brand {
