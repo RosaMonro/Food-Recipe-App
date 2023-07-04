@@ -5,9 +5,26 @@
                         $color-yellow 77%,
                         $color-yellow-lighten 100%);
     width: 100vw;
-    padding: sp(l);
+    padding-top: sp(s);
+    padding-bottom: sp(s);
+    
+    @include mq ($bp-small-desktop) { //1024px
+        padding: sp(l);
+    }
 }
 
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: sp(xxs);
+    color: white;
+
+    @include mq ($bp-small-desktop) { //1024px
+        padding-bottom: sp(s);
+    }
+}
 
 .contain-header-form {
     display: flex;
@@ -20,6 +37,12 @@
     }
 }
 
+.header-form {
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+}
+
 input[type="text"] {
     font-family: $font-primary;
     padding-left: sp(xs);
@@ -29,6 +52,11 @@ input[type="text"] {
     border: none;
     border-bottom: 2px solid $color-green;
     background-color: $color-white;
+
+    @include mq ($bp-small-desktop) { //1024px
+        height: 3em;
+        width: 20em;
+    }
 
     &:focus {
         border-radius: 2px;
@@ -42,17 +70,13 @@ button {
     color: $color-black;
     padding-left: sp(xs);
     padding-right: sp(xs);
-    height: 2em;
+    height: 2.2em;
     border-radius: 2px;
     border: 2px solid $color-green;
     font-family: $font-primary;
+
+    @include mq ($bp-small-desktop) { //1024px
+        height: 3.3em;
+    }
 }
 
-.brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-}

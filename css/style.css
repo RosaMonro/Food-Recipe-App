@@ -187,7 +187,36 @@ p.font-size-16-xxs {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #76E3A7), color-stop(77%, #ffffb2), to(#FEFEDE));
   background-image: linear-gradient(180deg, #76E3A7 20%, #ffffb2 77%, #FEFEDE 100%);
   width: 100vw;
-  padding: 6rem;
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+}
+@media only screen and (min-width: 64rem) {
+  .header-bg {
+    padding: 6rem;
+  }
+}
+
+.brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.2rem;
+  color: white;
+}
+@media only screen and (min-width: 64rem) {
+  .brand {
+    padding-bottom: 3.6rem;
+  }
 }
 
 .contain-header-form {
@@ -208,6 +237,17 @@ p.font-size-16-xxs {
   }
 }
 
+.header-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.3rem;
+}
+
 input[type=text] {
   font-family: "Marcellus", serif;
   padding-left: 2.4rem;
@@ -217,6 +257,12 @@ input[type=text] {
   border: none;
   border-bottom: 2px solid #76E3A7;
   background-color: #ffffff;
+}
+@media only screen and (min-width: 64rem) {
+  input[type=text] {
+    height: 3em;
+    width: 20em;
+  }
 }
 input[type=text]:focus {
   border-radius: 2px;
@@ -229,27 +275,15 @@ button {
   color: #1B171C;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
-  height: 2em;
+  height: 2.2em;
   border-radius: 2px;
   border: 2px solid #76E3A7;
   font-family: "Marcellus", serif;
 }
-
-.brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
+@media only screen and (min-width: 64rem) {
+  button {
+    height: 3.3em;
+  }
 }
 
 img {
