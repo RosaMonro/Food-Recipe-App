@@ -1,15 +1,26 @@
-.header-bg {
+.nav-bg {
     background-color: $color-green;
     background-image: linear-gradient(180deg, 
                         $color-green 20%, 
                         $color-yellow 77%,
                         $color-yellow-lighten 100%);
     width: 100vw;
-    padding-top: sp(s);
-    padding-bottom: sp(s);
-    
+    padding: sp(s) sp(xxs) sp(s) sp(xxs);
+
+    box-sizing: border-box;
+
+    @include mq ($bp-tablet) { //768px
+        justify-content: flex-end;
+        padding: sp(l) 10% sp(l) 10%;
+    }
+
     @include mq ($bp-small-desktop) { //1024px
-        padding: sp(l);
+        justify-content: flex-end;
+        padding: sp(xl) 10% sp(xl) 10%;
+    }
+
+    @include mq ($bp-desktop) { //1440px
+        padding: sp(xxl) 10% sp(xxl) 10%;
     }
 }
 
@@ -17,7 +28,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+
     padding-bottom: sp(xxs);
     color: white;
 
@@ -26,18 +38,16 @@
     }
 }
 
-.contain-header-form {
+.contain-nav-form {
     display: flex;
     justify-content: center;
-    padding: sp(xxs);
 
-    @include mq ($bp-small-desktop) { //1024px
-        justify-content: flex-end;
-        padding: sp(xxs) sp(l) sp(xxs) sp(l);
-    }
+    @include mq ($bp-small-desktop) {//1024px
+        justify-content: end;
+}
 }
 
-.header-form {
+.nav-form {
     display: flex;
     flex-direction: row;
     gap: .3rem;

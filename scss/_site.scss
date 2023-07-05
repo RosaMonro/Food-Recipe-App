@@ -4,5 +4,20 @@ html {
 
 body {
     margin: 0;
-    background-color: $color-yellow-lighten;
+    background-color: #fefede;
+    
+  }
+
+main {
+    background-image: linear-gradient(180deg, 
+                     #fefede 0%, 
+                     #fefef3 26%);
+                     
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include mq ($bp-small-desktop) { //1024px
+        padding-left: 10%;
+        padding-right: 10%;
+    }
   }
