@@ -1,4 +1,4 @@
-.nav-bg {
+.header-bg {
     background-color: $color-green;
     background-image: linear-gradient(180deg, 
                         $color-green 20%, 
@@ -24,21 +24,26 @@
     }
 }
 
-.brand {
+.brand,
+.subtitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
     padding-bottom: sp(xxs);
-    color: white;
+    color: $color-white;
 
     @include mq ($bp-small-desktop) { //1024px
         padding-bottom: sp(s);
     }
 }
 
-.contain-nav-form {
+.subtitle {
+    color: $color-green-darkest;
+}
+
+.nav-container {
     display: flex;
     justify-content: center;
 
