@@ -6,7 +6,7 @@ let searchQuery = ''; //Para almacenar el valor del campo de búsqueda. Al inici
 // const APP_key = '667c4e23af7f1a1598366bba205d1219';
 
 const fetchAPI = async (query) => {
-    const data = await fetch (`http://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+    const data = await fetch (`http://www.themealdb.com/api/json/v1/1/search.php?s=${query}`,{'Access-Control-Allow-Origin': 'https://www.themealdb.com',});
     const response = await data.json();
 
     response.meals.forEach (meal => { //iteramos cada objeto (meal) del array de comidas (response.meals) y ejecutamos la función para cada elemento
