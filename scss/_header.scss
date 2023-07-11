@@ -1,11 +1,13 @@
 .header-bg {
-    background-color: $color-green;
+    background-color: $color-brown;
     background-image: linear-gradient(180deg, 
-                        $color-green 20%, 
-                        $color-yellow 77%,
-                        $color-yellow-lighten 100%);
+                        $color-brown 18%, 
+                        $color-brown-lighten 87%,
+                        $color-brown-lightest 100%);
+    
+
     width: 100vw;
-    padding: sp(s) sp(xxs) sp(s) sp(xxs);
+    padding: sp(s) sp(xs) sp(s) sp(xs);
 
     box-sizing: border-box;
 
@@ -30,65 +32,67 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    color:$color-brown-darkest;
 
-    padding-bottom: sp(xxs);
-    color: $color-white;
+    padding-bottom: sp(s);
 
     @include mq ($bp-small-desktop) { //1024px
-        padding-bottom: sp(s);
+        padding-bottom: sp(m);
     }
 }
 
 .subtitle {
-    color: $color-green-darkest;
+    color: $color-brown-darkest;
 }
 
-.nav-container {
+.form-container {
     display: flex;
     justify-content: center;
-
-    @include mq ($bp-small-desktop) {//1024px
-        justify-content: end;
-}
-}
-
-.nav-form {
-    display: flex;
     flex-direction: row;
     gap: .3rem;
+
+    @include mq ($bp-small-desktop) { //1024px
+        justify-content: end;
+    }
 }
+
 
 input[type="text"] {
     font-family: $font-primary;
     padding-left: sp(xs);
     padding-right: sp(xs);
     height: 2em;
+    width: 25rem;
     border-radius: 2px;
     border: none;
-    border-bottom: 2px solid $color-green;
+    border-bottom: 2px solid $color-brown-darken;
     background-color: $color-white;
 
     @include mq ($bp-small-desktop) { //1024px
         height: 3em;
-        width: 20em;
+        // width: 20em;
     }
 
     &:focus {
         border-radius: 2px;
         outline: none;
-        border: 2px solid $color-green;
+        border: 2px solid $color-brown-darken;
     }
 }
 
 button {
-    background-color: $color-green;
+    background-color: $color-brown-darken;
     color: $color-black;
     padding-left: sp(xs);
     padding-right: sp(xs);
     height: 2.2em;
     border-radius: 2px;
-    border: 2px solid $color-green;
+    border: 2px solid $color-brown-darken;
     font-family: $font-primary;
+
+    &[type="submit"]{
+        color:$color-white;
+    }
 
     @include mq ($bp-small-desktop) { //1024px
         height: 3.3em;

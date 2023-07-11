@@ -21,7 +21,7 @@ const fetchAPI = async (query) => {
                 <h2 class="h3 recipe-tittle">${meal.strMeal}</h2>
                 <div class="recipe__info">
                     <a class="font-size-20-xs  recipe__link" href="${meal.strYoutube}">How To Make</a>
-                    <p class="font-size-16-xxs recipe__category">${meal.strCategory}</p>
+                    <p class="font-size-16-xxs recipe__category">Category: ${meal.strCategory}</p>
                 </div>
            
         `;

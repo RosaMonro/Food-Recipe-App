@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*---VARIABLES DE COLOR---*/
 /*----colores---*/
-/*----Variables de color para BG----*/
 /*---VARIABLES DE TIPOGRAFÍA---*/
 /*----familia de fuente----*/
 /*----tamaños de fuente----*/
@@ -13,12 +12,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #fefede;
+  background-color: #FBF5F0;
 }
 
 main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fefede), color-stop(26%, #fefef3));
-  background-image: linear-gradient(180deg, #fefede 0%, #fefef3 26%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FBF5F0), color-stop(26%, #F7F3EA));
+  background-image: linear-gradient(180deg, #FBF5F0 0%, #F7F3EA 26%);
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -197,11 +196,11 @@ p.font-size-16-xxs {
 }
 
 .header-bg {
-  background-color: #76E3A7;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #76E3A7), color-stop(77%, #ffffb2), to(#FEFEDE));
-  background-image: linear-gradient(180deg, #76E3A7 20%, #ffffb2 77%, #FEFEDE 100%);
+  background-color: #E3D3BA;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #E3D3BA), color-stop(87%, #F7F3EA), to(#FBF5F0));
+  background-image: linear-gradient(180deg, #E3D3BA 18%, #F7F3EA 87%, #FBF5F0 100%);
   width: 100vw;
-  padding: 3.6rem 1.2rem 3.6rem 1.2rem;
+  padding: 3.6rem 2.4rem 3.6rem 2.4rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -240,45 +239,39 @@ p.font-size-16-xxs {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-bottom: 1.2rem;
-  color: #ffffff;
+  color: #454037;
+  padding-bottom: 3.6rem;
 }
 @media only screen and (min-width: 64rem) {
   .brand,
   .subtitle {
-    padding-bottom: 3.6rem;
+    padding-bottom: 4.8rem;
   }
 }
 
 .subtitle {
-  color: #2b513b;
+  color: #454037;
 }
 
-.nav-container {
+.form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media only screen and (min-width: 64rem) {
-  .nav-container {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-}
-
-.nav-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0.3rem;
+}
+@media only screen and (min-width: 64rem) {
+  .form-container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
 }
 
 input[type=text] {
@@ -286,32 +279,35 @@ input[type=text] {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   height: 2em;
+  width: 25rem;
   border-radius: 2px;
   border: none;
-  border-bottom: 2px solid #76E3A7;
+  border-bottom: 2px solid #5D5242;
   background-color: #ffffff;
 }
 @media only screen and (min-width: 64rem) {
   input[type=text] {
     height: 3em;
-    width: 20em;
   }
 }
 input[type=text]:focus {
   border-radius: 2px;
   outline: none;
-  border: 2px solid #76E3A7;
+  border: 2px solid #5D5242;
 }
 
 button {
-  background-color: #76E3A7;
+  background-color: #5D5242;
   color: #1B171C;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   height: 2.2em;
   border-radius: 2px;
-  border: 2px solid #76E3A7;
+  border: 2px solid #5D5242;
   font-family: "Marcellus", serif;
+}
+button[type=submit] {
+  color: #ffffff;
 }
 @media only screen and (min-width: 64rem) {
   button {
@@ -337,13 +333,13 @@ img {
 
 .recipe {
   text-align: center;
-  color: #69CB94;
+  color: #5D5242;
   max-width: 35rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
-  border: #D2EED3 1px solid;
-  background-color: #fefef3;
+  border: #F7F3EA 1px solid;
+  background-color: #FBF5F0;
   -webkit-box-shadow: -5px 4px 15px -10px rgb(164, 173, 166);
           box-shadow: -5px 4px 15px -10px rgb(164, 173, 166);
 }

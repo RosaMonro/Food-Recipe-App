@@ -4,14 +4,14 @@ html {
 
 body {
     margin: 0;
-    background-color: #fefede;
+    background-color: $color-brown-lightest;
     
   }
 
 main {
     background-image: linear-gradient(180deg, 
-                     #fefede 0%, 
-                     #fefef3 26%);
+                     $color-brown-lightest 0%, 
+                     $color-brown-lighten 26%);
                      
     padding-left: 5%;
     padding-right: 5%;
