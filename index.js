@@ -2,30 +2,32 @@ const searchForm = document.querySelector ('form'); //creamos constante y la ini
 const searchResultDiv = document.querySelector ('.search-result'); //
 const container = document.querySelector ('header');
 let searchQuery = ''; //Para almacenar el valor del campo de búsqueda. Al inicializarla como una cadena vacía, se le asigna un valor predeterminado que indica que inicialmente no se ha realizado ninguna búsqueda.
-// const APP_ID = '61af9b54';
-// const APP_key = '667c4e23af7f1a1598366bba205d1219';
 
 const fetchAPI = async (query) => {
-    const data = await fetch (`http://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
-    // const data = await fetch (`http://www.themealdb.com/api/json/v1/1/search.php?s=${query}`,{'Access-Control-Allow-Origin': 'https://www.themealdb.com',});
 
-    const response = await data.json();
+    const data = await fetch (`http://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+    const response = await data.json(); //para convertir los datos de la respuesta en formato JSON y almacenarlos en response
+    //await para pausar la ejecución del código hasta que se complete una operación asincrónica y se resuelva una promesa.  
+    //await asegura que la siguiente línea de código no se ejecute hasta que se haya obtenido la respuesta de la API.
+
+    // console.log(response);
 
     response.meals.forEach (meal => { //iteramos cada objeto (meal) del array de comidas (response.meals) y ejecutamos la función para cada elemento
-        const recipeDiv = document.createElement ('div');
-        recipeDiv.classList.add('recipe');
+        const recipeDiv = document.createElement ('div'); //creamos un elemento div y y se asigna a la variable 'recipeDiv'
+        recipeDiv.classList.add('recipe'); //se agrega la clase CSS 'recipe' al elemento recipeDiv 
         recipeDiv.innerHTML = `
-            <div class="card">
-
+            
                 <img src="${meal.strMealThumb}" alt="">
-                <div class="card__info">
-                    <a class="h4  card__tittle" href="">Vista de la receta</a>
-                    <p class="card-data  font-size-16-xxs">Calorias: 100</p>
+                <h2 class="h3 recipe-tittle">${meal.strMeal}</h2>
+                <div class="recipe__info">
+                    <a class="font-size-20-xs  recipe__link" href="${meal.strYoutube}">How To Make</a>
+                    <p class="font-size-16-xxs recipe__category">${meal.strCategory}</p>
                 </div>
-
-            </div>
+           
         `;
-        searchResultDiv.appendChild(recipeDiv);
+        searchResultDiv.appendChild(recipeDiv); // se encarga de agregar el elemento recipeDiv como un hijo del elemento searchResultDiv en el HTML.
+        //Esto significa que el elemento recipeDiv se insertará dentro del elemento searchResultDiv en el árbol de elementos HTML.
+        //searchResultDiv es una referencia al elemento HTML en el que mostrar los resultados de búsqueda: contenedor <div> con la clase "search-result".
     });
 }
 
@@ -39,11 +41,4 @@ searchForm.addEventListener('submit', (e) => { //queremos que "escuche" el event
     //A medida que el usuario interactúa con el formulario y envía una consulta de búsqueda, el código JavaScript actualiza el valor de searchQuery con el contenido del campo de entrada del formulario
     fetchAPI(searchQuery); //se pasa searchQuery como argumento al llamar a fetchAPI(searchQuery).Así, el valor del campo de búsqueda se pasa a la función fetchAPI() y se utilizará en la URL de la API.
 })
-
-// async function fetchAPI (){
-//     const baseURL = `https://api.edamam.com/api/recipes/v2?q=pizza&app_is=${APP_ID}&app_key=${APP_key}`; //usamos `` para poder manipular la cadena. Al utilizar los backticks, se puede incluir una expresión ${...} dentro de la cadena de texto para interpolación de variables.
-//     const response = await fetch(baseURL); //await para pausar la ejecución del código hasta que se complete una operación asincrónica y se resuelva una promesa.
-//     const data = await response.json();
-//     console.log(data);
-// }
 

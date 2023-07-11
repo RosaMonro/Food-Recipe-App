@@ -132,7 +132,8 @@ h6,
 }
 
 /*---parrafos---*/
-p {
+p,
+a {
   font-family: "Marcellus", serif;
 }
 
@@ -323,32 +324,53 @@ button {
   display: grid;
   grid-gap: 3.5rem;
   grid-template: auto/repeat(auto-fit, minmax(30rem, 1fr));
-  width: 100%;
+  justify-items: center;
 }
 
 img {
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 2px;
 }
 
-.card {
-  width: 100%;
+.recipe {
+  text-align: center;
+  color: #69CB94;
+  max-width: 35rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 2px;
   border: #D2EED3 1px solid;
   background-color: #fefef3;
+  -webkit-box-shadow: -5px 4px 15px -10px rgb(164, 173, 166);
+          box-shadow: -5px 4px 15px -10px rgb(164, 173, 166);
 }
-.card__tittle {
-  text-decoration: none;
-  color: #69CB94;
+.recipe__tittle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.card__info {
+.recipe__link {
+  text-decoration: underline;
+  color: #1B171C;
+}
+.recipe__link:hover {
+  font-weight: 900;
+}
+.recipe__category {
+  color: #1B171C;
+}
+.recipe__info {
   padding: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

@@ -1,29 +1,46 @@
 img {
     width: 100%;
     height: auto;
-    // object-fit: cover;
+    object-fit: cover;
 
     border-radius: 2px;
 }
 
-.card {
-    width: 100%;
+.recipe {
+    text-align: center;
+    color: $color-green-darken;
+
+    max-width: 35rem;
 
     box-sizing: border-box;
 
     border-radius: 2px;
     border: $color-green-lighten 1px solid;
     background-color: $color-yellow-lightest;
+    box-shadow: -5px 4px 15px -10px rgba(164,173,166,1);
 
     &__tittle {
-        text-decoration: none;
-        color: $color-green-darken;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: underline;
+        color: $color-black;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+
+    &__category {
+        color: $color-black;
     }
 
     &__info {
         padding: sp(xs);
 
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
