@@ -9,12 +9,11 @@ body {
   }
 
 main {
-    background-image: linear-gradient(180deg, 
-                     $color-brown-lightest 0%, 
-                     $color-brown-lighten 26%);
+    background-color: $color-brown-lightest;
                      
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 10rem;;
 
     @include mq ($bp-small-desktop) { //1024px
         padding-left: 10%;

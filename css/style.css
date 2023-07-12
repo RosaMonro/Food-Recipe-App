@@ -16,10 +16,10 @@ body {
 }
 
 main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FBF5F0), color-stop(26%, #F7F3EA));
-  background-image: linear-gradient(180deg, #FBF5F0 0%, #F7F3EA 26%);
+  background-color: #FBF5F0;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 10rem;
 }
 @media only screen and (min-width: 64rem) {
   main {
