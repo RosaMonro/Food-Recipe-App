@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/style.css">
-        <title>Food Recipe App</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Marcellus&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Food Recipe App</title>
+  </head>
 
-    <body>
+  <body>
+    <header class="header-bg">
+      <h1 class="brand">Cooking Cravings</h1>
+      <p class="font-size-24-s subtitle">
+        Can't decide what to cook? Let's find your culinary adventure!
+      </p>
 
-        <header class="header-bg"> 
+      <form class="form-container">
+        <input type="text" placeholder="What would you like to eat?" />
+        <button type="submit">Search</button>
+      </form>
+    </header>
 
-            <h1 class="brand">Cooking Cravings</h1>
-            <p class="font-size-24-s subtitle">Can't decide what to cook? Let's find your culinary adventure!</p>
-
-            <form class="form-container">
-                <input type="text" placeholder="What would you like to eat?">
-                <button type="submit">Search</button>
-            </form>
-
-        </header>
-
-        <main class="main-container">
-
-            <div class="search-result">
-
-                <!-- <div class="card">
+    <main class="main-container">
+      <div class="search-result">
+        <!-- <div class="card">
 
                     <img src="https://picsum.photos/id/1/200/300" alt="">
                     <div class="card__info">
@@ -38,14 +41,13 @@
                     </div>
 
                 </div> -->
+      </div>
+    </main>
 
+    <footer>
+      <img src="images/ingredient.png" alt="" />
+    </footer>
 
-            </div>
-
-        </main>
-
-        <script src="./index.js"></script>
-        
-    </body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>

@@ -1,22 +1,29 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    margin: 0;
-    background-color: $color-brown-lightest;
-    
-  }
+  margin: 0;
+  background-color: $color-brown-lightest;
+  min-height: 100vh;
+  position: relative;
+}
 
 main {
-    background-color: $color-brown-lightest;
-                     
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 10rem;;
+  background-color: $color-brown-lightest;
 
-    @include mq ($bp-small-desktop) { //1024px
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10rem;
+
+  @include mq($bp-small-desktop) {
+    //1024px
+    padding-left: 10%;
+    padding-right: 10%;
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
