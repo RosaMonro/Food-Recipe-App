@@ -24,7 +24,7 @@ const fetchAPI = async (query) => {
       recipeDiv.classList.add("recipe"); //se agrega la clase CSS 'recipe' al elemento recipeDiv
       recipeDiv.innerHTML = `
                     
-                        <img src="${meal.strMealThumb}" alt="">
+                        <img class="recipe-img"  src="${meal.strMealThumb}" alt="">
                         <h2 class="h3 recipe-tittle">${meal.strMeal}</h2>
                         <div class="recipe__info">
                             <a class="font-size-20-xs  recipe__link" href="${meal.strYoutube}">How To Make</a>
