@@ -37,6 +37,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  bottom: 0;
 }
 
 h1,
@@ -309,7 +311,7 @@ input[type=text]:focus {
 
 button {
   background-color: #5D5242;
-  color: #1B171C;
+  color: #ffffff;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   height: 2.2em;
@@ -336,6 +338,10 @@ button[type=submit] {
 
 .footer-img {
   max-width: 100%;
+}
+
+.recipe-details {
+  display: none;
 }
 
 .recipe {

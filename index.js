@@ -32,6 +32,14 @@ const fetchAPI = async (query) => {
                         </div>
                    
                 `;
+
+      const button = document.createElement("button");
+      button.textContent = "View Recipe";
+      recipeDiv.appendChild(button);
+      button.addEventListener("click", () => {
+        openRecipePopup(meal);
+      });
+
       searchResultDiv.appendChild(recipeDiv); // se encarga de agregar el elemento recipeDiv como un hijo del elemento searchResultDiv en el HTML.
       //Esto significa que el elemento recipeDiv se insertará dentro del elemento searchResultDiv en el árbol de elementos HTML.
       //searchResultDiv es una referencia al elemento HTML en el que mostrar los resultados de búsqueda: contenedor <div> con la clase "search-result".
