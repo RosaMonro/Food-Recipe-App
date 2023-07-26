@@ -14,7 +14,6 @@ main {
 
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 10rem;
 
   @include mq($bp-small-desktop) {
     //1024px
@@ -24,11 +23,7 @@ main {
 }
 
 footer {
+  padding-top: 10%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }

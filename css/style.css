@@ -21,7 +21,6 @@ main {
   background-color: #FBF5F0;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 10rem;
 }
 @media only screen and (min-width: 64rem) {
   main {
@@ -31,19 +30,13 @@ main {
 }
 
 footer {
+  padding-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 h1,
@@ -339,6 +332,10 @@ button[type=submit] {
   grid-gap: 3.5rem;
   grid-template: auto/repeat(auto-fit, minmax(30rem, 1fr));
   justify-items: center;
+}
+
+.footer-img {
+  max-width: 100%;
 }
 
 .recipe {
