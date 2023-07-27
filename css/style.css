@@ -403,6 +403,7 @@ input[type=text]:focus {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 10px;
   background-color: #5d5242;
   border-radius: 2px;
   width: 85%;
@@ -413,12 +414,14 @@ input[type=text]:focus {
   .card__popup {
     width: 70%;
     height: 70%;
+    padding: 15px;
   }
 }
 @media only screen and (min-width: 48rem) {
   .card__popup {
     width: 40%;
     height: 70%;
+    padding: 20px;
   }
 }
 .card__popup::-webkit-scrollbar {

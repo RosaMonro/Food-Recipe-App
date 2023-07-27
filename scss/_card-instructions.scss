@@ -5,6 +5,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 10px;
+
   background-color: $color-brown-darken;
   border-radius: 2px;
   width: 85%;
@@ -16,12 +18,16 @@
     //576px
     width: 70%;
     height: 70%;
+
+    padding: 15px;
   }
 
   @include mq($bp-tablet) {
     //576px
     width: 40%;
     height: 70%;
+
+    padding: 20px;
   }
 
   //Para dar estilo a la scrollbar y  asegurarnos de que se ve en todos los navegadores
