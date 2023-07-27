@@ -82,6 +82,16 @@ body {
   background-color: #fbf5f0;
   min-height: 100vh;
 }
+body::-webkit-scrollbar {
+  width: 1.8rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #5d5242;
+  border-radius: 2px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fbf5f0;
+}
 
 main {
   background-color: #fbf5f0;
@@ -395,9 +405,21 @@ input[type=text]:focus {
           transform: translate(-50%, -50%);
   background-color: #5d5242;
   border-radius: 2px;
-  width: 40%;
-  height: 60%;
+  width: 85%;
+  height: 70%;
   overflow-y: scroll;
+}
+@media only screen and (min-width: 36rem) {
+  .card__popup {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .card__popup {
+    width: 40%;
+    height: 70%;
+  }
 }
 .card__popup::-webkit-scrollbar {
   width: 1.8rem;
@@ -406,12 +428,18 @@ input[type=text]:focus {
   width: 1.8rem;
 }
 .card__popup::-webkit-scrollbar-thumb {
-  background-color: #e3d3ba;
+  background-color: #f7f3ea;
   border-radius: 2px;
 }
 .card__popup-info {
-  padding: 2.4rem;
+  padding: 1.2rem;
   padding-top: 0;
+}
+@media only screen and (min-width: 36rem) {
+  .card__popup-info {
+    padding: 2.4rem;
+    padding-top: 0;
+  }
 }
 .card__popup-title {
   text-align: center;
@@ -419,6 +447,7 @@ input[type=text]:focus {
   margin-bottom: 2.4rem;
 }
 .card__popup-ingredients {
+  line-height: 25px;
   margin-bottom: 20px;
   margin-left: -20px;
 }
@@ -514,8 +543,8 @@ li {
 .recipe-close-btn {
   background-color: #ffffff;
   border: 1px solid #ffffff;
-  height: 2.2em;
-  width: 2.2em;
+  height: 1.5em;
+  width: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,6 +559,12 @@ li {
   left: 20px;
   border-radius: 2px;
   cursor: pointer;
+}
+@media only screen and (min-width: 36rem) {
+  .recipe-close-btn {
+    height: 2.2em;
+    width: 2.2em;
+  }
 }
 .recipe-close-btn:hover {
   background-color: #f7f3ea;

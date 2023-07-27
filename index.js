@@ -18,8 +18,6 @@ const fetchAPI = async (query) => {
 
     searchResultDiv.innerHTML = ""; // Vacia el contenido actual del contenedor antes de agregar nuevos resultados
 
-    //////////////////////////////////AÑADIR try - catch PARA GESTIONAR LOS ERRORES EN LA BÚSQUEDA./////////////////////////////////////////
-
     response.meals.forEach((meal) => {
       //iteramos cada objeto (meal) del array de comidas (response.meals) y ejecutamos la fx para cada elemento
       const recipeDiv = document.createElement("div"); //creamos un elemento div y y se asigna a la variable 'recipeDiv'
@@ -72,6 +70,7 @@ searchForm.addEventListener("submit", (e) => {
   //querySelector('input') busca el campo de entrada dentro del formulario.
   //.value obtiene el texto que el usuario ha ingresado en ese campo y lo guarda en la variable searchQuery.
   //A medida que el usuario interactúa con el formulario y envía una consulta de búsqueda, el código JavaScript actualiza el valor de searchQuery con el contenido del campo de entrada del formulario
+
   fetchAPI(searchQuery); //se pasa searchQuery como argumento al llamar a fetchAPI(searchQuery).Así, el valor del campo de búsqueda se pasa a la fx fetchAPI() y se utilizará en la URL de la API.
 });
 

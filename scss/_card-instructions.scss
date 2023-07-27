@@ -7,11 +7,22 @@
 
   background-color: $color-brown-darken;
   border-radius: 2px;
-  width: 40%;
-  height: 60%;
+  width: 85%;
+  height: 70%;
 
-  // transition: all 2.5s ease-in-out;
   overflow-y: scroll;
+
+  @include mq($bp-small-tablet) {
+    //576px
+    width: 70%;
+    height: 70%;
+  }
+
+  @include mq($bp-tablet) {
+    //576px
+    width: 40%;
+    height: 70%;
+  }
 
   //Para dar estilo a la scrollbar y  asegurarnos de que se ve en todos los navegadores
   &::-webkit-scrollbar {
@@ -24,13 +35,19 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $color-brown;
+    background-color: $color-brown-lighten;
     border-radius: 2px;
   }
 
   &-info {
-    padding: sp(xs);
+    padding: sp(xxs);
     padding-top: 0;
+
+    @include mq($bp-small-tablet) {
+      //576px
+      padding: sp(xs);
+      padding-top: 0;
+    }
   }
 
   &-title {
@@ -40,6 +57,7 @@
   }
 
   &-ingredients {
+    line-height: 25px;
     margin-bottom: 20px;
     margin-left: -20px;
   }
