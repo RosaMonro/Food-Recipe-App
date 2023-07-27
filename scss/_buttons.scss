@@ -1,0 +1,56 @@
+.btn {
+  font-family: $font-primary;
+  background-color: $color-brown-darken;
+  border: 2px solid $color-brown-darken;
+  color: $color-white;
+
+  padding-left: sp(xs);
+  padding-right: sp(xs);
+  height: 2.2em;
+
+  border-radius: 2px;
+  cursor: pointer;
+
+  &--search-button {
+    &[type="submit"] {
+      color: $color-white;
+    }
+  }
+
+  @include mq($bp-small-desktop) {
+    //1024px
+    height: 3.3em;
+  }
+
+  &--recipe-button {
+    margin-bottom: 5%;
+
+    &:hover {
+      background-color: $color-brown;
+      color: $color-brown-darkest;
+      font-weight: 600;
+    }
+  }
+}
+
+.recipe-close-btn {
+  // background-color: transparent;
+  background-color: $color-white;
+  border: 1px solid $color-white;
+  height: 2.2em;
+  width: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-brown-lighten;
+    border: 1px solid $color-brown-darken;
+  }
+}

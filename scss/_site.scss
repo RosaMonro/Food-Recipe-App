@@ -3,10 +3,12 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
   background-color: $color-brown-lightest;
   min-height: 100vh;
-  position: relative;
 }
 
 main {
@@ -26,6 +28,5 @@ footer {
   padding-top: 10%;
   display: flex;
   justify-content: center;
-  position: absolute;
   bottom: 0;
 }

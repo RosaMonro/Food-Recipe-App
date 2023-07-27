@@ -26,21 +26,29 @@
 
       <form class="form-container">
         <input type="text" placeholder="What would you like to eat?" />
-        <button type="submit">Search</button>
+        <button class="btn btn--search-button" type="submit">Search</button>
       </form>
     </header>
 
     <main class="main-container">
       <div class="search-result">
-        <!-- <div class="card">
+        <!-- <div class="recipe">
 
-                    <img src="https://picsum.photos/id/1/200/300" alt="">
-                    <div class="card__info">
-                        <a class="h4  card__tittle" href="">Vista de la receta</a>
-                        <p class="card-data  font-size-16-xxs">Calorias: 100</p>
-                    </div>
+                    <img class="recipe-img"  src="${meal.strMealThumb}" alt="">
+                        <h2 class="h3 recipe-tittle">${meal.strMeal}</h2>
+                        <div class="recipe__info">
+                            <a class="font-size-20-xs  recipe__link" href="${meal.strYoutube}">How To Make</a>
+                            <p class="font-size-16-xxs recipe__category">Category: ${meal.strCategory}</p>
+                   
 
                 </div> -->
+      </div>
+
+      <div class="card__popup">
+        <button type="button" class="recipe-close-btn">
+          <img src="./images/close_icon.png" alt="" />
+        </button>
+        <div class="card__popup-info"></div>
       </div>
     </main>
 

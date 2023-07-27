@@ -1,3 +1,56 @@
-.recipe-details {
+.card__popup {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: $color-brown-darken;
+  border-radius: 2px;
+  width: 40%;
+  height: 60%;
+
+  // transition: all 2.5s ease-in-out;
+  overflow-y: scroll;
+
+  //Para dar estilo a la scrollbar y  asegurarnos de que se ve en todos los navegadores
+  &::-webkit-scrollbar {
+    width: 1.8rem;
+  }
+
+  //Para dar estilo a la scrollbar y  asegurarnos de que se ve en todos los navegadores
+  &::-webkit-scrollbar {
+    width: 1.8rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-brown;
+    border-radius: 2px;
+  }
+
+  &-info {
+    padding: sp(xs);
+    padding-top: 0;
+  }
+
+  &-title {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: sp(xs);
+  }
+
+  &-ingredients {
+    margin-bottom: 20px;
+    margin-left: -20px;
+  }
+
+  &-instructions p {
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+li {
+  list-style: none;
+  font-family: $font-primary;
 }

@@ -84,23 +84,3 @@ input[type="text"] {
     border: 2px solid $color-brown-darken;
   }
 }
-
-button {
-  background-color: $color-brown-darken;
-  color: $color-white;
-  padding-left: sp(xs);
-  padding-right: sp(xs);
-  height: 2.2em;
-  border-radius: 2px;
-  border: 2px solid $color-brown-darken;
-  font-family: $font-primary;
-
-  &[type="submit"] {
-    color: $color-white;
-  }
-
-  @include mq($bp-small-desktop) {
-    //1024px
-    height: 3.3em;
-  }
-}

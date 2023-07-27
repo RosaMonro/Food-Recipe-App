@@ -1,48 +1,69 @@
 /*---VARIABLES DE COLOR---*/
 
-        /*----colores---*/
+/*----colores---*/
 
-        $color-brown-darkest:     #454037;
-        $color-brown-darken:      #5D5242;
-        $color-brown:             #E3D3BA;
-        $color-brown-lighten:     #F7F3EA;
-        $color-brown-lightest:    #FBF5F0;
+$color-brown-darkest: #454037;
+$color-brown-darken: #5d5242;
+$color-brown: #e3d3ba;
+$color-brown-lighten: #f7f3ea;
+$color-brown-lightest: #fbf5f0;
 
-        $color-white:             #ffffff;
-        $color-black:             #1B171C;
+$color-white: #ffffff;
+$color-black: #1b171c;
 
+/*-----mapa y loop de colores para colors y bg-colors---*/
+
+$colors: (
+  "brown-darkest": $color-brown-darkest,
+  "brown-darken": $color-brown-darken,
+  "brown": $color-brown,
+  "brown-lighten": $color-brown-lighten,
+  "color-brown-lightest": $color-brown-lightest,
+
+  "white": $color-white,
+  "black": $color-black,
+);
+
+@each $color, $i in $colors {
+  .color-#{$color} {
+    color: $i;
+  }
+
+  .color-bg-#{$color} {
+    background-color: $i;
+  }
+}
 
 /*---VARIABLES DE TIPOGRAFÍA---*/
 
-        /*----familia de fuente----*/
+/*----familia de fuente----*/
 
-        $font-primary: 'Marcellus', serif;
-        $font-headings: 'Abril Fatface', cursive;
+$font-primary: "Marcellus", serif;
+$font-headings: "Abril Fatface", cursive;
 
-        /*----tamaños de fuente----*/
+/*----tamaños de fuente----*/
 
-        $font-size-xxs: 1.4rem; // 14px
-        $font-size-xs:  1.8rem; // 18px
-        $font-size-s:   2.0rem; // 20px
-        $font-size-m:   2.4rem; // 24px
-        $font-size-l:   3.6rem; // 36px
-        $font-size-xl:  4.8rem; // 48px
-        $font-size-xxl: 6.4rem; // 64px
-
+$font-size-xxs: 1.4rem; // 14px
+$font-size-xs: 1.8rem; // 18px
+$font-size-s: 2rem; // 20px
+$font-size-m: 2.4rem; // 24px
+$font-size-l: 3.6rem; // 36px
+$font-size-xl: 4.8rem; // 48px
+$font-size-xxl: 6.4rem; // 64px
 
 /*-----MÁRGENES Y PADDINGS-----*/
 
-        $margins: (
-                "xxs":   1.2,
-                "xs":    2.4,
-                "s":     3.6,
-                "m":     4.8,
-                "l":     6.0,
-                "xl":    10.8,
-                "xxl":   12.0,
-                "giant": 20
-        );
+$margins: (
+  "xxs": 1.2,
+  "xs": 2.4,
+  "s": 3.6,
+  "m": 4.8,
+  "l": 6,
+  "xl": 10.8,
+  "xxl": 12,
+  "giant": 20,
+);
 
-        @function sp($margin) {
-                @return map-get($margins, $margin) * 1rem;
-        }
+@function sp($margin) {
+  @return map-get($margins, $margin) * 1rem;
+}
