@@ -428,7 +428,7 @@ input[type=text]:focus {
   width: 1.8rem;
 }
 .card__popup::-webkit-scrollbar-thumb {
-  background-color: #f7f3ea;
+  background-color: #e3d3ba;
   border-radius: 2px;
 }
 .card__popup-info {
